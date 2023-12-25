@@ -1,0 +1,21 @@
+##### CANINICLES GAME DOC ######
+
+You play as a dog in an RPG;
+Get more powerful over time;
+Free allies from camps;
+Control territories;
+Win the war;
+RPG
+--------------------------------
+To-Do:
+
+1. Create dog character;
+2. Isometric camera;
+3. Dog movement;
+4. Dog attack;
+5. Dog abilities (rolling);
+6. Enemy deaths;
+7. UI Basics
+8. Experience and leveling;
+9. Enemy movements;
+10. Enemy attacks;
