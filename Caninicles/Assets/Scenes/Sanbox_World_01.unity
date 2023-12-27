@@ -213,7 +213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c55bfdba74e0478f8b4cbeaf8642aab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clickEffect: {fileID: 0}
+  clickEffect: {fileID: 3311267632801275014, guid: 89bb65bea58354fcf9e559788a865a31, type: 3}
   clickableLayers:
     serializedVersion: 2
     m_Bits: 64
