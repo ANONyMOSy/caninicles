@@ -42,7 +42,6 @@ public class PlayerController : MonoBehaviour
 
     void TryPee() {
     if (agent.velocity == Vector3.zero && !peeing) {
-        Debug.Log("Pee action performed");
         peeing = true;
         animator.Play(PEE);
         Invoke("PeeFalse", 5f);  // This will set peeing back to false after 5 seconds
