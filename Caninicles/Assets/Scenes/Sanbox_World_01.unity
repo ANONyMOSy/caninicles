@@ -151,11 +151,12 @@ Transform:
   m_GameObject: {fileID: 4573762}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.746, z: 0}
+  m_LocalPosition: {x: 0, y: 1.746, z: -7.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1698505279}
+  - {fileID: 1463478905}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &4573764
@@ -217,6 +218,8 @@ MonoBehaviour:
   clickableLayers:
     serializedVersion: 2
     m_Bits: 64
+  pee: {fileID: 1997070905675413943, guid: 3bdf4483fe62d42b8949cbacd88f9e8f, type: 3}
+  peeLocation: {fileID: 1463478905}
 --- !u!1001 &120907582
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1245,6 +1248,7 @@ GameObject:
   - component: {fileID: 1024111342}
   - component: {fileID: 1024111341}
   - component: {fileID: 1024111340}
+  - component: {fileID: 1024111344}
   m_Layer: 6
   m_Name: Floor
   m_TagString: Untagged
@@ -1338,6 +1342,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1647423932}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1024111344
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024111339}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86c7ebfc91ac74db9a6182db5cd29ec6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &1027663013 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 310397b80629d4e918adbe890321a8dd, type: 3}
@@ -1624,6 +1649,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 31692ffdd5f424140801300e1aa662b1, type: 3}
   m_PrefabInstance: {fileID: 120907582}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1463478904
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1463478905}
+  m_Layer: 0
+  m_Name: PeeSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1463478905
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463478904}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.14735381, y: 0.69158286, z: -0.69158286, w: 0.14735381}
+  m_LocalPosition: {x: 0.059, y: 1.245, z: -0.727}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4573763}
+  m_LocalEulerAnglesHint: {x: 65.944, y: 90, z: -90}
 --- !u!4 &1486639424 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f3013f9b047ef4798a9fefba8fd67de2, type: 3}
@@ -5659,7 +5715,7 @@ Transform:
   m_GameObject: {fileID: 3604022772207894971}
   serializedVersion: 2
   m_LocalRotation: {x: 0.9729133, y: -0.00092390436, z: 0.002918335, w: -0.23114999}
-  m_LocalPosition: {x: -0.00030763316, y: 0.0097306715, z: 0.017780943}
+  m_LocalPosition: {x: -0.0003076332, y: 0.0097306715, z: 0.017780943}
   m_LocalScale: {x: 0.99999994, y: 1, z: 1.0000002}
   m_ConstrainProportionsScale: 0
   m_Children:
