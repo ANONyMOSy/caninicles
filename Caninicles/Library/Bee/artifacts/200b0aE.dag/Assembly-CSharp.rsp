@@ -365,6 +365,7 @@
 "Assets/Scripts/Anchor.cs"
 "Assets/Scripts/AutoDestroyParticleSystem.cs"
 "Assets/Scripts/CameraController.cs"
+"Assets/Scripts/Coin.cs"
 "Assets/Scripts/CustomActions.cs"
 "Assets/Scripts/Leveling.cs"
 "Assets/Scripts/Money.cs"
