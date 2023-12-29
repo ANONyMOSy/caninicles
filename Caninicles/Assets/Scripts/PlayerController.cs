@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("Attack")]
     [SerializeField] float attackSpeed = 1.5f;
-    [SerializeField] float attackDelay = 0.3f;
+    [SerializeField] float attackDelay = 4f;
     [SerializeField] float attackDistance = 1.5f;
     [SerializeField] int attackDamage = 1;
     [SerializeField] ParticleSystem hitEffect;
