@@ -226,7 +226,7 @@ MonoBehaviour:
   peeLocation: {fileID: 1463478905}
   attackSpeed: 1.5
   attackDelay: 0.3
-  attackDistance: 1.5
+  attackDistance: 4
   attackDamage: 20
   hitEffect: {fileID: 7914160276616594201, guid: c3012f3d416bd4163811ea4287ea1e21, type: 3}
 --- !u!114 &4573767
