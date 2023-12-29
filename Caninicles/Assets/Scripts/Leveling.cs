@@ -43,7 +43,6 @@ public class Leveling : MonoBehaviour
 
     void UpdateGraphics() {
         graphic.text = "Cologero - Lvl " + level + "\n\n" + experience + "/" + experienceToNext;
-        Debug.Log("ADDED");
     }
 
 
