@@ -367,6 +367,7 @@
 "Assets/Scripts/CameraController.cs"
 "Assets/Scripts/CustomActions.cs"
 "Assets/Scripts/Leveling.cs"
+"Assets/Scripts/Money.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/WalkingTracker.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
