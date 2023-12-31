@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Actor : MonoBehaviour
 {
@@ -8,12 +9,15 @@ public class Actor : MonoBehaviour
     public int currentHealth { get; private set; }
     private Animator anim;
 
+    private Slider healthBar;
+
     public bool inCombat = false;
     private float combatTimer = 10f;
 
     void Awake() {
         currentHealth = maxHealth;
         anim = GetComponent<Animator>();
+        healthBar = GetComponentInChildren<Slider>();
     }
 
     void Update() {
@@ -22,6 +26,7 @@ public class Actor : MonoBehaviour
         if (combatTimer <= 0) {
             inCombat = false;
         }
+        healthBar.value = (float)currentHealth / (float)maxHealth;
     }
 
     public void TakeDamage(int amount) {
