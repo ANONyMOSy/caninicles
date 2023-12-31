@@ -25,7 +25,7 @@ public class EnemyCombat : MonoBehaviour
                 Invoke("ResetAttack", cooldown);
 
                 playerHealth.TakeDamage(5);
-                statusEffects.AddEffect(StatusEffects.EffectType.Poison, 1, 5);
+                statusEffects.AddEffect(StatusEffects.EffectType.Poison, 2, 5);
             }
         }
     }
