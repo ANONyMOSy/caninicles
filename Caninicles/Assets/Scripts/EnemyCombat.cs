@@ -9,6 +9,7 @@ public class EnemyCombat : MonoBehaviour
     private Actor actor;
 
     public ParticleSystem enemyDeath;
+    public ParticleSystem enemyGas;
 
     [Header("Attacks")]
     [SerializeField] bool readyToAttack = true;
@@ -49,6 +50,10 @@ public class EnemyCombat : MonoBehaviour
     void DealDamage() {
         playerHealth.TakeDamage(5);
         statusEffects.AddEffect(StatusEffects.EffectType.Poison, 1, 5);
+        ParticleSystem instantiatedObject = Instantiate(enemyGas, transform.position, Quaternion.identity);
+        
+        instantiatedObject.transform.Rotate(Vector3.right, -90f);
+        // I love Taylor Traynor
     }
 
     void ResetAttack() {

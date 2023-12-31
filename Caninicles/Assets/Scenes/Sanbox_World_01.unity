@@ -262,7 +262,7 @@ MonoBehaviour:
   pee: {fileID: 1997070905675413943, guid: 3bdf4483fe62d42b8949cbacd88f9e8f, type: 3}
   peeLocation: {fileID: 1463478905}
   attackSpeed: 1.5
-  attackDelay: 0.7
+  attackDelay: 0.5
   attackDistance: 4
   attackDamage: 5
   hitEffect: {fileID: 5324184129603122678, guid: c3012f3d416bd4163811ea4287ea1e21, type: 3}
@@ -3617,6 +3617,119 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 68043556eadd04243a98890f421fc011, type: 3}
   m_PrefabInstance: {fileID: 941546844}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1772443872
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1695197366881989408, guid: 4fdbd7de484f5418b9615d8770ac1fff, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.139494
+      objectReference: {fileID: 0}
+    - target: {fileID: 1695197366881989408, guid: 4fdbd7de484f5418b9615d8770ac1fff, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1695197366881989408, guid: 4fdbd7de484f5418b9615d8770ac1fff, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 27.009506
+      objectReference: {fileID: 0}
+    - target: {fileID: 1695197366881989408, guid: 4fdbd7de484f5418b9615d8770ac1fff, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1695197366881989408, guid: 4fdbd7de484f5418b9615d8770ac1fff, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1695197366881989408, guid: 4fdbd7de484f5418b9615d8770ac1fff, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1695197366881989408, guid: 4fdbd7de484f5418b9615d8770ac1fff, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1695197366881989408, guid: 4fdbd7de484f5418b9615d8770ac1fff, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1695197366881989408, guid: 4fdbd7de484f5418b9615d8770ac1fff, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1695197366881989408, guid: 4fdbd7de484f5418b9615d8770ac1fff, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3537899000105823640, guid: 4fdbd7de484f5418b9615d8770ac1fff, type: 3}
+      propertyPath: VelocityModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3537899000105823640, guid: 4fdbd7de484f5418b9615d8770ac1fff, type: 3}
+      propertyPath: ShapeModule.m_Rotation.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3537899000105823640, guid: 4fdbd7de484f5418b9615d8770ac1fff, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.atime0
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3537899000105823640, guid: 4fdbd7de484f5418b9615d8770ac1fff, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.atime1
+      value: 7325
+      objectReference: {fileID: 0}
+    - target: {fileID: 3537899000105823640, guid: 4fdbd7de484f5418b9615d8770ac1fff, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.atime2
+      value: 35273
+      objectReference: {fileID: 0}
+    - target: {fileID: 3537899000105823640, guid: 4fdbd7de484f5418b9615d8770ac1fff, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.atime3
+      value: 47031
+      objectReference: {fileID: 0}
+    - target: {fileID: 3537899000105823640, guid: 4fdbd7de484f5418b9615d8770ac1fff, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.atime4
+      value: 48573
+      objectReference: {fileID: 0}
+    - target: {fileID: 3537899000105823640, guid: 4fdbd7de484f5418b9615d8770ac1fff, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.atime5
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 3537899000105823640, guid: 4fdbd7de484f5418b9615d8770ac1fff, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key0.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3537899000105823640, guid: 4fdbd7de484f5418b9615d8770ac1fff, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key1.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3537899000105823640, guid: 4fdbd7de484f5418b9615d8770ac1fff, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key2.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3537899000105823640, guid: 4fdbd7de484f5418b9615d8770ac1fff, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key3.a
+      value: 0.8153356
+      objectReference: {fileID: 0}
+    - target: {fileID: 3537899000105823640, guid: 4fdbd7de484f5418b9615d8770ac1fff, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key4.a
+      value: 0.9681449
+      objectReference: {fileID: 0}
+    - target: {fileID: 3537899000105823640, guid: 4fdbd7de484f5418b9615d8770ac1fff, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.m_NumAlphaKeys
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7456675099288431453, guid: 4fdbd7de484f5418b9615d8770ac1fff, type: 3}
+      propertyPath: m_Name
+      value: PoisonGas 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4fdbd7de484f5418b9615d8770ac1fff, type: 3}
 --- !u!4 &1854849077 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0ba74de2ce6f14a868f04e3b53a0ae98, type: 3}
@@ -6432,6 +6545,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyDeath: {fileID: 5652463872393032921, guid: d895a1f210bd5445eafc432d1085d221, type: 3}
+  enemyGas: {fileID: 3537899000105823640, guid: 4fdbd7de484f5418b9615d8770ac1fff, type: 3}
   readyToAttack: 1
   cooldown: 4
 --- !u!1 &2945708017366931765
@@ -12002,3 +12116,4 @@ SceneRoots:
   - {fileID: 2588992760494240771}
   - {fileID: 1983268584598055894}
   - {fileID: 607334800}
+  - {fileID: 1772443872}
