@@ -6040,6 +6040,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 531157cd40efb4f6a8c9c69d544e6fd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDeath: {fileID: 5652463872393032921, guid: d895a1f210bd5445eafc432d1085d221, type: 3}
   readyToAttack: 1
   cooldown: 4
 --- !u!1 &2945708017366931765

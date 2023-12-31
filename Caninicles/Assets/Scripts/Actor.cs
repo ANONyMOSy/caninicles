@@ -36,7 +36,6 @@ public class Actor : MonoBehaviour
     }
 
     void Die() {
-        anim.Play("EnemyDeath");
 
         Invoke("Destruct", 0.33f);
     }
