@@ -14,10 +14,16 @@ public class Actor : MonoBehaviour
     public bool inCombat = false;
     private float combatTimer = 10f;
 
+    public int expGivenOnDeath = 50;
+    public int expGivenPerHit = 2;
+
+    private Leveling level;
+
     void Awake() {
         currentHealth = maxHealth;
         anim = GetComponent<Animator>();
         healthBar = GetComponentInChildren<Slider>();
+        level = GameObject.Find("Player").GetComponent<Leveling>();
     }
 
     void Update() {
@@ -34,6 +40,8 @@ public class Actor : MonoBehaviour
         combatTimer = 10f;
         inCombat = true;
 
+       level.AddExperience(expGivenPerHit);
+
         Debug.Log("TOOK DAMAGE");
         if (currentHealth <= 0) {
             Die();
@@ -41,8 +49,9 @@ public class Actor : MonoBehaviour
     }
 
     void Die() {
-
+        level.AddExperience(expGivenOnDeath);
         Invoke("Destruct", 0.33f);
+
     }
 
     void Destruct() {
