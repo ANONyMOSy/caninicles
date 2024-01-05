@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7851896382125085424}
   - component: {fileID: 3311267632801275014}
   - component: {fileID: 1272328808579662488}
+  - component: {fileID: 3360412131910780500}
   m_Layer: 0
   m_Name: Click Effect
   m_TagString: Untagged
