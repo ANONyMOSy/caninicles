@@ -9,7 +9,14 @@ public class Leveling : MonoBehaviour
     private int experience = 0;
     private int experienceToNext = 100;
 
+
     public TextMeshProUGUI graphic;
+
+    PlayerStats ps;
+
+    void Awake() {
+        ps = GetComponent<PlayerStats>();
+    }
 
     void Update() {
         UpdateGraphics();
@@ -20,6 +27,7 @@ public class Leveling : MonoBehaviour
         if (experience >= experienceToNext) {
             level += 1;
             experience -= experienceToNext;
+            ps.StatsLeveling(level);
             UpdateExperienceToNext();
         }
     }

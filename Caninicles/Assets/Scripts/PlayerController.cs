@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float attackSpeed = 1.5f;
     [SerializeField] float attackDelay = 4f;
     [SerializeField] float attackDistance = 1.5f;
-    [SerializeField] int attackDamage = 1;
+    public int attackDamage = 1;
     [SerializeField] ParticleSystem hitEffect;
 
     bool playerBusy = false;
@@ -126,7 +126,7 @@ public class PlayerController : MonoBehaviour
     
     void SendAttack() {
         if(target == null) return;
-
+        
         if(target.myActor.currentHealth <= 0) {
             target = null;
             return;
@@ -146,18 +146,14 @@ public class PlayerController : MonoBehaviour
     }
 
     void FaceTarget() {
-        if(agent.destination == transform.position) return;
-
-        Vector3 facing = Vector3.zero;
-        if(target != null) {
-            facing = target.transform.position; 
-        } else {
-            facing = agent.destination;
+        if(agent.velocity != Vector3.zero){
+            // Use the velocity to determine the direction the agent is moving.
+            Vector3 direction = agent.velocity.normalized;
+            // Create a rotation looking in the direction of movement with the up vector set as the world's up direction.
+            Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
+            // Smoothly rotate the agent to face the direction of movement.
+            transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * lookRotationSpeed);
         }
-
-        Vector3 direction = (facing - transform.position).normalized;
-        Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
-        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * lookRotationSpeed);
     }
 
     void SetAnimations() {

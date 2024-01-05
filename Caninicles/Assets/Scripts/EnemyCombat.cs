@@ -44,14 +44,14 @@ public class EnemyCombat : MonoBehaviour
     }
 
     void PlayDeathParticles() {
-        Instantiate(enemyDeath, transform.position, Quaternion.identity);
+        Instantiate(enemyDeath, transform.position + new Vector3(0, 3, 0), Quaternion.identity);
     }
 
     void DealDamage() {
         playerHealth.TakeDamage(5);
         statusEffects.AddEffect(StatusEffects.EffectType.Poison, 1, 5);
         ParticleSystem instantiatedObject = Instantiate(enemyGas, transform.position, Quaternion.identity);
-        
+    
         instantiatedObject.transform.Rotate(Vector3.right, -90f);
         // I love Taylor Traynor
     }

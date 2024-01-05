@@ -10,6 +10,10 @@ public class Interactable : MonoBehaviour
 
     public InteractableType interactionType;
 
+    public bool isMushroomPlant = false;
+
+    public GameObject mushroomEnemy;
+
     void Awake() {
         if(interactionType == InteractableType.Enemy) {
             myActor = GetComponent<Actor>();
@@ -17,6 +21,10 @@ public class Interactable : MonoBehaviour
     }
 
     public void InteractWithItem() {
+        if(isMushroomPlant) {
+            Instantiate(mushroomEnemy, transform.position, Quaternion.identity);
+        }
         Destroy(gameObject);
     }
+
 }
